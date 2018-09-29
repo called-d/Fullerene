@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Fullerene Tabs",
+  "version": "0.0.0",
+
+  // Recommended
+  // "default_locale": "en",
+  "description": "",
+  //"icons": {...},
+
+  // Pick one (or none)
+  //"browser_action": {...},
+  //"page_action": {...},
+
+  // Optional
+  //"action": ...,
+  "author": ["called-d <called.0xd@gmail.com>"],
+}
