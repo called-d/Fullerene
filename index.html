@@ -9,11 +9,14 @@
         <div id="app">
             <notification>test</notification>
         </div>
-        <h1>Hello Worlds!</h1>
-        <!-- All of the Node.js APIs are available in this renderer process. -->
-        We are using Node.js <script>document.write(process.versions.node)</script>,
-        Chromium <script>document.write(process.versions.chrome)</script>,
-        and Electron <script>document.write(process.versions.electron)</script>.
+        <script>
+            ["chrome", "node", "electron"].forEach(key => {
+                let meta = document.createElement('meta')
+                meta.name = `${key}_version`
+                meta.content = process.versions[key]
+                document.head.appendChild(meta)
+            })
+        </script>
 
         <script>
           require('./public/js/app.js')
