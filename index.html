@@ -3,11 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <title>Hello World!</title>
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" type="text/css" href="public/css/app.css" media="screen">
     </head>
     <body>
         <div id="app">
-            <notification>test</notification>
+            <item-form @add="add"></item-form>
+            <div class="item" v-for="item in items">{{item}}</div>
         </div>
         <script>
             ["chrome", "node", "electron"].forEach(key => {

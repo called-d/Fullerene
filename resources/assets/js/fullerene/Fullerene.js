@@ -59,6 +59,12 @@ export default class {
         }
     }
     get items() { return this._db.select().from(this._items).exec() }
+    set itemsChanged(func) {
+        this._db.observe(
+            this._db.select().from(this._items),
+            func
+        )
+    }
 
     import(db) {
         let schemaBuilder = lf.schema.create(db.name, db.version)
