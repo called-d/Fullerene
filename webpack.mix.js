@@ -13,6 +13,19 @@ mix
                     options: { appendTsSuffixTo: [/\.vue$/] },
                     exclude: /node_modules/,
                 },
+                {
+                    test: /\.scss$/,
+                    use: [
+                        { loader: 'extract-loader' },
+                        { loader: 'css-loader' },
+                        {
+                            loader: 'sass-loader',
+                            options: {
+                            includePaths: ['./node_modules'],
+                            }
+                        }
+                    ]
+                },
             ],
         },
         resolve: {

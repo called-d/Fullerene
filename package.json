@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "electron": "^3.0.1",
+    "extract-loader": "^3.0.0",
     "laravel-mix": "^2.1.14",
     "lovefield": "^2.1.12",
     "material-components-web": "latest",
