@@ -11,6 +11,12 @@
   // Pick one (or none)
   //"browser_action": {...},
   //"page_action": {...},
+  "background": {
+    "scripts": [
+      "extension-background.js",
+    ],
+    "persistent": false,
+  },
 
   // Optional
   //"action": ...,
