@@ -13,7 +13,7 @@
   //"page_action": {...},
   "background": {
     "scripts": [
-      "extension-background.js"
+      "public/extension/background.js"
     ],
     "persistent": false
   },
