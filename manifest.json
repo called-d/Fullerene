@@ -13,12 +13,16 @@
   //"page_action": {...},
   "background": {
     "scripts": [
-      "extension-background.js",
+      "extension-background.js"
     ],
-    "persistent": false,
+    "persistent": false
   },
 
   // Optional
   //"action": ...,
   "author": ["called-d <called.0xd@gmail.com>"],
+
+  "permissions": [
+    "storage"
+  ]
 }
