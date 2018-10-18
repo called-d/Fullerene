@@ -6,11 +6,18 @@
   // Recommended
   // "default_locale": "en",
   "description": "",
-  //"icons": {...},
+  "icons": {
+    "16": "resources/assets/images/Fullerene-b.32.png",
+    "48": "resources/assets/images/Fullerene-b.64.png",
+    "128": "resources/assets/images/Fullerene-b.128.png"
+  },
 
-  // Pick one (or none)
-  //"browser_action": {...},
-  //"page_action": {...},
+  "browser_action": {
+    "default_icon": {
+      "19": "resources/assets/images/Fullerene-b.square.80.png"
+    },
+    "default_title": "Fullerene Tabs"
+  },
   "background": {
     "scripts": [
       "public/extension/background.js"
