@@ -5,6 +5,7 @@ mix
     .js('resources/assets/js/app.js', 'public/js')
     .js('extension/js/background.js', 'public/extension/')
     .js('extension/js/main.js', 'public/extension/')
+    .js('extension/js/options.js', 'public/extension/')
     .sass('resources/assets/sass/app.scss', 'public/css')
     .webpackConfig({
         module: {
