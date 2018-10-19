@@ -29,7 +29,7 @@ const mainWindow = {
                     type: "popup",
                     focused: true,
                 },
-                w => { self._w = w }
+                w => { this._w = w }
             );
         });
     }
