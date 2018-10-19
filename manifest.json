@@ -30,6 +30,7 @@
   "author": ["called-d <called.0xd@gmail.com>"],
 
   "permissions": [
-    "storage"
+    "storage",
+    "contextMenus"
   ]
 }
